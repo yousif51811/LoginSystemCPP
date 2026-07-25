@@ -1,0 +1,24 @@
+// The end-result should look something like:
+
+What would you like to do?
+ Register
+> Login // here is highlighted in a different color since it is selected
+
+If register:
+Choose username: // if taken, it'll say taken
+Choose password: // validate the password
+Choose secret sentence: // secret sentence only you can access
+
+// The credentials should then be appended to a json file securely!
+
+If login:
+Enter Username: // If non-existent, says so
+Enter Password: // If not correct, says so
+
+Login Succesful, Welcome <username>
+your secure sentence is <sentence>
+
+// Rules:
+// No AI!
+// Project must be well seperated
+// CMAKE must be implemented.

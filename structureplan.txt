@@ -1,0 +1,15 @@
+main => Gets wether you choose to sign in or register
+Register/Login => Handles the user interface for the authentication.
+Usermanager => Handle users in general
+User (object for data) 
+
+UserManager will contain:
+    bool DoesUserExist(name) 
+    private string GetUserPasswordHash(name) 
+    bool ValidatePassword(name,password) 
+    string GetSecretSentence(string password) // Secret sentence should be encrypted with the original password 
+    bool SignIn(username,password)
+    bool AddUser(User user) // false if user exists
+and it will be entirely static.
+
+I'm not sure wether i might split down UserManager if it handles too much.

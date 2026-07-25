@@ -2,7 +2,7 @@
 #include <vector>
 #include <termios.h>
 #include <unistd.h>
-#include "console.hpp"
+#include "Console.hpp"
 #include <cstdlib>
 
 // Copied off stackoverflow

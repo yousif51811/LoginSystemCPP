@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "console.hpp"
+#include "Console.hpp"
 
 int main(int argc, char* argv[]) 
 {

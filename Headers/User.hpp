@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "bcrypt.h"
 
 class User {
 private:
@@ -14,12 +15,16 @@ public:
     const std::string& GetUsername() const {
         return username;
     }
-
     const std::string& GetPasswordHash() const {
         return passwordHash;
     }
 
-    const std::string& GetSecretSentence() const {
+    const std::string& GetSecretSentenceEncrypted() const {
         return secretSentence;
     }
+    const bool ValidatePassword(std::string password) {
+        return bcrypt::validatePassword(password, GetPasswordHash()); 
+    }
+
+    
 };

@@ -6,4 +6,5 @@ class Console {
     public:
         static void eraseLines(int count);
         static int PrintOptions(std::vector<std::string> options, int Index = 0);
+        static void PressEnterToContinue();
 };
